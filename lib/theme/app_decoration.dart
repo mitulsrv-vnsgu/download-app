@@ -8,9 +8,6 @@ class AppDecoration {
   static BoxDecoration get fillGray104 => BoxDecoration(
         color: ColorConstant.gray104,
       );
-  static BoxDecoration get txtFillIndigo900 => BoxDecoration(
-        color: ColorConstant.indigo900,
-      );
   static BoxDecoration get fillWhiteA700 => BoxDecoration(
         color: ColorConstant.whiteA700,
       );
@@ -26,12 +23,6 @@ class AppDecoration {
 }
 
 class BorderRadiusStyle {
-  static BorderRadius txtCircleBorder28 = BorderRadius.circular(
-    getHorizontalSize(
-      28.00,
-    ),
-  );
-
   static BorderRadius txtRoundedBorder3 = BorderRadius.circular(
     getHorizontalSize(
       3.00,

@@ -4,7 +4,6 @@ import 'models/payment_links_item_model.dart';
 import 'package:flutter/material.dart';
 import 'package:razorpayapp/core/app_export.dart';
 import 'package:razorpayapp/widgets/app_bar/appbar_image.dart';
-import 'package:razorpayapp/widgets/app_bar/appbar_subtitle.dart';
 import 'package:razorpayapp/widgets/app_bar/custom_app_bar.dart';
 import 'package:razorpayapp/widgets/custom_button.dart';
 
@@ -44,11 +43,17 @@ class PaymentLinksScreen extends GetWidget<PaymentLinksController> {
                                                         .imgArrowleft,
                                                     margin: getMargin(left: 16),
                                                     onTap: onTapArrowleft),
-                                                title: AppbarSubtitle(
-                                                    text:
+                                                title: Padding(
+                                                    padding:
+                                                        getPadding(left: 16),
+                                                    child: Text(
                                                         "lbl_payment_links".tr,
-                                                    margin:
-                                                        getMargin(left: 16)))
+                                                        overflow: TextOverflow
+                                                            .ellipsis,
+                                                        textAlign:
+                                                            TextAlign.left,
+                                                        style: AppStyle
+                                                            .txtMulishRomanBold18)))
                                           ]))),
                               Align(
                                   alignment: Alignment.centerLeft,

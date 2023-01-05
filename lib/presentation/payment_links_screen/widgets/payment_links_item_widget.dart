@@ -35,7 +35,7 @@ class PaymentLinksItemWidget extends StatelessWidget {
                   "lbl_28_00".tr,
                   overflow: TextOverflow.ellipsis,
                   textAlign: TextAlign.left,
-                  style: AppStyle.txtMulishRomanBold16Bluegray901.copyWith(
+                  style: AppStyle.txtMulishRomanBold16.copyWith(
                     height: 1.00,
                   ),
                 ),

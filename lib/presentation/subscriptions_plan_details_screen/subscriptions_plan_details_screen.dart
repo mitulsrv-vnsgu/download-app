@@ -47,8 +47,7 @@ class SubscriptionsPlanDetailsScreen
                                       child: Text("msg_provide_details".tr,
                                           overflow: TextOverflow.ellipsis,
                                           textAlign: TextAlign.left,
-                                          style: AppStyle
-                                              .txtMulishRomanMedium16Bluegray500
+                                          style: AppStyle.txtMulishRomanMedium16
                                               .copyWith(height: 1.00)))),
                               CustomImageView(
                                   svgPath: ImageConstant.imgGroup292,
@@ -284,7 +283,7 @@ class SubscriptionsPlanDetailsScreen
                                                         TextOverflow.ellipsis,
                                                     textAlign: TextAlign.left,
                                                     style: AppStyle
-                                                        .txtMulishRomanSemiBold14Bluegray500
+                                                        .txtMulishRomanSemiBold14
                                                         .copyWith(
                                                             height: 1.00)))
                                           ]))),
@@ -379,7 +378,7 @@ class SubscriptionsPlanDetailsScreen
                                                         TextOverflow.ellipsis,
                                                     textAlign: TextAlign.left,
                                                     style: AppStyle
-                                                        .txtMulishRomanSemiBold14Bluegray500
+                                                        .txtMulishRomanSemiBold14
                                                         .copyWith(
                                                             height: 1.00)))
                                           ]))),
@@ -475,7 +474,7 @@ class SubscriptionsPlanDetailsScreen
                                                         TextOverflow.ellipsis,
                                                     textAlign: TextAlign.left,
                                                     style: AppStyle
-                                                        .txtMulishRomanSemiBold14Bluegray500
+                                                        .txtMulishRomanSemiBold14
                                                         .copyWith(
                                                             height: 1.00)))
                                           ]))),
