@@ -3,7 +3,7 @@ import 'package:razorpayapp/core/app_export.dart';
 
 class AppStyle {
   static TextStyle txtMulishRomanSemiBold16 = TextStyle(
-    color: ColorConstant.bluegray901,
+    color: ColorConstant.bluegray800,
     fontSize: getFontSize(
       16,
     ),
@@ -27,15 +27,6 @@ class AppStyle {
     ),
     fontFamily: 'Mulish',
     fontWeight: FontWeight.w700,
-  );
-
-  static TextStyle txtMulishRomanSemiBold16Bluegray800 = TextStyle(
-    color: ColorConstant.bluegray800,
-    fontSize: getFontSize(
-      16,
-    ),
-    fontFamily: 'Mulish',
-    fontWeight: FontWeight.w600,
   );
 
   static TextStyle txtMulishRomanBold18Blue700 = TextStyle(

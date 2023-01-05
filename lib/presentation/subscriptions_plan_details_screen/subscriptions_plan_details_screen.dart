@@ -2,7 +2,6 @@ import 'controller/subscriptions_plan_details_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:razorpayapp/core/app_export.dart';
 import 'package:razorpayapp/widgets/app_bar/appbar_image.dart';
-import 'package:razorpayapp/widgets/app_bar/appbar_title.dart';
 import 'package:razorpayapp/widgets/app_bar/custom_app_bar.dart';
 import 'package:razorpayapp/widgets/custom_button.dart';
 import 'package:razorpayapp/widgets/custom_drop_down.dart';
@@ -24,10 +23,13 @@ class SubscriptionsPlanDetailsScreen
                     width: getSize(32.00),
                     svgPath: ImageConstant.imgArrowleft,
                     margin: getMargin(left: 16, top: 24, bottom: 24),
-                    onTap: onTapArrowleft2),
-                title: AppbarTitle(
-                    text: "msg_create_subscrip".tr,
-                    margin: getMargin(left: 16)),
+                    onTap: onTapArrowleft1),
+                title: Padding(
+                    padding: getPadding(left: 16),
+                    child: Text("msg_create_subscrip".tr,
+                        overflow: TextOverflow.ellipsis,
+                        textAlign: TextAlign.left,
+                        style: AppStyle.txtMulishRomanSemiBold18)),
                 styleType: Style.bgFillGray900),
             body: SizedBox(
                 width: size.width,
@@ -70,21 +72,21 @@ class SubscriptionsPlanDetailsScreen
                                                 maxLines: null,
                                                 textAlign: TextAlign.center,
                                                 style: AppStyle
-                                                    .txtMulishRomanSemiBold16Bluegray800)),
+                                                    .txtMulishRomanSemiBold16)),
                                         Container(
                                             width: getHorizontalSize(52.00),
                                             child: Text("lbl_link_details".tr,
                                                 maxLines: null,
                                                 textAlign: TextAlign.center,
                                                 style: AppStyle
-                                                    .txtMulishRomanSemiBold16Bluegray800)),
+                                                    .txtMulishRomanSemiBold16)),
                                         Padding(
                                             padding: getPadding(bottom: 20),
                                             child: Text("lbl_review".tr,
                                                 overflow: TextOverflow.ellipsis,
                                                 textAlign: TextAlign.left,
                                                 style: AppStyle
-                                                    .txtMulishRomanSemiBold16Bluegray800))
+                                                    .txtMulishRomanSemiBold16))
                                       ])),
                               Align(
                                   alignment: Alignment.centerLeft,
@@ -492,7 +494,7 @@ class SubscriptionsPlanDetailsScreen
                             ]))))));
   }
 
-  onTapArrowleft2() {
+  onTapArrowleft1() {
     Get.back();
   }
 }
