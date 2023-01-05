@@ -87,7 +87,6 @@ final Map<String, String> enUs = {
   "lbl_plan_details": "Plan Details",
   "lbl_payment_link2": "Payment link ",
   "msg_recent_payment": "RECENT PAYMENT LINKS",
-  "msg_home_container": "Home - Container",
   "lbl_no_expiry": "No Expiry",
   "lbl_created_on": "Created On",
   "lbl_previous": "Previous",
