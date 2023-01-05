@@ -2,8 +2,6 @@ import 'package:razorpayapp/presentation/home_container_screen/home_container_sc
 import 'package:razorpayapp/presentation/home_container_screen/binding/home_container_binding.dart';
 import 'package:razorpayapp/presentation/payment_links_screen/payment_links_screen.dart';
 import 'package:razorpayapp/presentation/payment_links_screen/binding/payment_links_binding.dart';
-import 'package:razorpayapp/presentation/subscriptions_screen/subscriptions_screen.dart';
-import 'package:razorpayapp/presentation/subscriptions_screen/binding/subscriptions_binding.dart';
 import 'package:razorpayapp/presentation/subscriptions_plan_details_screen/subscriptions_plan_details_screen.dart';
 import 'package:razorpayapp/presentation/subscriptions_plan_details_screen/binding/subscriptions_plan_details_binding.dart';
 import 'package:razorpayapp/presentation/app_navigation_screen/app_navigation_screen.dart';
@@ -16,8 +14,6 @@ class AppRoutes {
   static const String homePage = '/home_page';
 
   static const String paymentLinksScreen = '/payment_links_screen';
-
-  static const String subscriptionsScreen = '/subscriptions_screen';
 
   static const String subscriptionsPlanDetailsScreen =
       '/subscriptions_plan_details_screen';
@@ -39,13 +35,6 @@ class AppRoutes {
       page: () => PaymentLinksScreen(),
       bindings: [
         PaymentLinksBinding(),
-      ],
-    ),
-    GetPage(
-      name: subscriptionsScreen,
-      page: () => SubscriptionsScreen(),
-      bindings: [
-        SubscriptionsBinding(),
       ],
     ),
     GetPage(
